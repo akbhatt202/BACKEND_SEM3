@@ -27,7 +27,7 @@ const server=http.createServer((req, res) => {
         res.writeHead(200, {"Content-Type": "application/json"});
         res.write(JSON.stringify(users));
         res.end();
-    }else if( req.url=="/users" && req.method=="POST"){
+    }else if( req.url="/users" && req.method=="POST"){
        try{
          let body="";
         req.on("data", (chunk) => {
